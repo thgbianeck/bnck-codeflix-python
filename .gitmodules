@@ -1,0 +1,3 @@
+[submodule "bnck-admin-catalogo-py"]
+	path = bnck-admin-catalogo-py
+	url = https://github.com/thgbianeck/bnck-admin-catalogo-py.git

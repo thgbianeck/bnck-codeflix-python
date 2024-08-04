@@ -1,0 +1,47 @@
+{
+    "name": "bnck-admin-catalogo",
+    "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+    "service": "app",
+    "workspaceFolder": "/app",
+    "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {},
+      "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
+        "plugins": "git git-flow F-Sy-H zsh-autosuggestions zsh-completions",
+        "omzPlugins": "https://github.com/z-shell/F-Sy-H https://github.com/zsh-users/zsh-autosuggestions https://github.com/zsh-users/zsh-completions"
+      },
+      "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.debugpy",
+          "cameron.vscode-pytest",
+          "littlefoxteam.vscode-python-test-adapter",
+          "esbenp.prettier-vscode",
+          "eamodio.gitlens",
+          "ms-azuretools.vscode-docker",
+          "dbaeumer.vscode-eslint",
+          "editorconfig.editorconfig",
+          "humao.rest-client",
+          "donjayamanne.githistory",
+          "tabnine.tabnine-vscode",
+          "xyz.local-history",
+          "mhutchie.git-graph",
+          "usernamehw.errorlens",
+          "jebbs.plantuml",
+          "qhoekman.language-plantuml",
+          "rvest.vs-code-prettier-eslint"
+        ],
+        "settings": {
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "esbenp.prettier-vscode",
+          "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+          }
+        }
+      }
+    },
+    "shutdownAction": "none"
+  }
+  
