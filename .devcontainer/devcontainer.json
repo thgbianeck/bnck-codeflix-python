@@ -1,5 +1,5 @@
 {
-    "name": "bnck-admin-catalogo",
+    "name": "Micro Videos Admin - Python",
     "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
     "service": "app",
     "workspaceFolder": "/app",
