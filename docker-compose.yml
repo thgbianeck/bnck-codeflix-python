@@ -3,11 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: /bin/bash ./.docker/start.sh
-    container_name: bnck-admin-catalogo
+    container_name: bnck-admin-catalogo-py
     ports:
       - "8000:8000"
     volumes:
-      - .:/app
+      - .:/usr/src/app
     environment:
       - PYTHONUNBUFFERED=1

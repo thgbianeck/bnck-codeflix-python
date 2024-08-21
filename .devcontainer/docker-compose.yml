@@ -1,6 +1,6 @@
 services:
   app:
     volumes:
-      - .:/app:cached
+      - .:/usr/src/app:cached
     environment:
       - SHELL=/bin/zsh
